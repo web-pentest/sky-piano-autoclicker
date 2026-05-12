@@ -20,10 +20,72 @@
 - 🐙 Встроенная реклама проектов `web-pentest`
 
 ---
-
 ## 📦 Установка
 
 ```bash
 git clone https://github.com/web-pentest/sky-piano-autoclicker.git
 cd sky-piano-autoclicker
 chmod +x clicker.py
+```
+### Зависимости (Arch Linux)
+
+```bash
+sudo pacman -S python xdotool
+pip install --break-system-packages pynput
+```
+### Зависимости (Debian/Ubuntu)
+
+```bash
+sudo apt install python3 python3-pip xdotool
+pip install pynput
+```
+## 🎮 Как использовать
+
+1. Положи файлы с песнями в папку `songs/`
+2. Запусти скрипт:
+   ```bash
+   python3 clicker.py
+   ```
+3. Выбери песню из списка
+4. Переключись в окно игры Sky
+5. Слушай музыку!
+
+---
+## 🗂️ Формат файлов
+
+**Текстовый файл (`.txt`)** — каждая строка: название ноты
+**JSON файл (`.json`)** — любой формат Sky (`songNotes`, `notes`, `columns+breakpoints`)
+
+---
+## 🛠️ Раскладка клавиш
+
+| Нота | Клавиша |
+|------|---------|
+| 1Key0 | y |
+| 1Key1 | u |
+| 1Key2 | i |
+| 1Key3 | o |
+| 1Key4 | p |
+| 1Key5 | h |
+| 1Key6 | j |
+| 1Key7 | k |
+| 1Key8 | l |
+| 1Key9 | b |
+| 1Key10 | c |
+| 1Key11 | m |
+| 1Key12 | t |
+| 1Key13 | r |
+| 1Key14 | n |
+
+---
+## 🐙 Автор
+
+**web-pentest** — [GitHub](https://github.com/web-pentest)
+
+## 📜 Лицензия
+
+MIT — свободно используй и модифицируй.
+
+---
+
+⭐ Поставь звезду, если проект полезен!
