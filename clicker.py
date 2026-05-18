@@ -21,7 +21,6 @@ KEY_MAP = {
 }
 # =============================================================
 
-# Цвета (расширенная палитра)
 CYAN = '\033[96m'
 GREEN = '\033[92m'
 BLUE = '\033[94m'
@@ -97,7 +96,6 @@ def play_song(file_path):
     print(f"{GREEN}⏱️  Длительность:{RESET} {YELLOW}{total_seconds:.1f} сек{RESET}")
     print(f"{YELLOW}⏳ 5 секунд до старта...{RESET}")
 
-    # Анимированный отсчёт
     for i in range(5, 0, -1):
         print(f"\r   Старт через {i}... ", end='', flush=True)
         time.sleep(1)
@@ -106,7 +104,6 @@ def play_song(file_path):
     start_time = time.time()
     played_notes = 0
 
-    # Запускаем прогресс-бар в отдельном потоке
     def progress_updater():
         nonlocal played_notes
         while time.time() - start_time < total_seconds:
